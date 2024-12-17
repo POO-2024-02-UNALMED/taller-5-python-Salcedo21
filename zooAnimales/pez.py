@@ -12,6 +12,9 @@ class Pez(Animal):
         Pez.listado.append(self)
         Animal.peces += 1
 
+    def getColorEscamas(self):
+        return self.colorEscamas
+
     def movimiento(self):
         return "nadar"
 

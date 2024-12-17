@@ -11,6 +11,9 @@ class Ave(Animal):
         Ave.listado.append(self)
         Animal.aves += 1
 
+    def getColorPlumas(self):
+        return self.colorPlumas
+
     def movimiento(self):
         return "volar"
 

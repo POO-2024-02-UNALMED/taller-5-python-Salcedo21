@@ -17,7 +17,8 @@ class Animal:
     def movimiento(self):
         return "desplazarse"
 
-    def totalPorTipo(self):
+    @classmethod
+    def totalPorTipo(cls):
         return (f"Mamiferos : {Animal.mamiferos}\n"
                 f"Aves : {Animal.aves}\n"
                 f"Reptiles : {Animal.reptiles}\n"

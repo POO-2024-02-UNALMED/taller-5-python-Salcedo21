@@ -12,6 +12,9 @@ class Mamifero(Animal):
         Mamifero.listado.append(self)
         Animal.mamiferos += 1
 
+    def ispelaje(self):
+        return self.pelaje
+
     @staticmethod
     def crearCaballo(nombre, edad, genero):
         Mamifero.caballos += 1

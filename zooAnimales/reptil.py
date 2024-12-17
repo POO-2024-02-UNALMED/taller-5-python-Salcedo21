@@ -12,6 +12,9 @@ class Reptil(Animal):
         Reptil.listado.append(self)
         Animal.reptiles += 1
 
+    def getColorEscamas(self):
+        return self.colorEscamas
+
     def movimiento(self):
         return "reptar"
 

@@ -11,6 +11,9 @@ class Anfibio(Animal):
         Anfibio.listado.append(self)
         Animal.anfibios += 1
 
+    def getColorPiel(self):
+        return self.colorPiel
+
     def movimiento(self):
         return "saltar"
 
@@ -27,3 +30,4 @@ class Anfibio(Animal):
     @staticmethod
     def cantidadAnfibios():
         return len(Anfibio.listado)
+
