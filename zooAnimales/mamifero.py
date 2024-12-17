@@ -12,6 +12,9 @@ class Mamifero(Animal):
         Mamifero.listado.append(self)
         Animal.mamiferos += 1
 
+    def getPatas(self):
+        return self.patas
+
     def isPelaje(self):
         return self.pelaje
 
