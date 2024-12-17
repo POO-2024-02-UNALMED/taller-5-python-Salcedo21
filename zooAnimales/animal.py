@@ -8,16 +8,16 @@ class Animal:
 
     def __init__(self, nombre, edad, habitat, genero, zona=None):
         Animal.totalAnimales += 1
-        self.__nombre = nombre
-        self.__edad = edad
-        self.__habitat = habitat
-        self.__genero = genero
+        self._nombre = nombre
+        self._edad = edad
+        self._habitat = habitat
+        self._genero = genero
         self.zona = zona
 
     def movimiento(self):
         return "desplazarse"
 
-    def totalPorTipo():
+    def totalPorTipo(self):
         return (f"Mamiferos : {Animal.mamiferos}\n"
                 f"Aves : {Animal.aves}\n"
                 f"Reptiles : {Animal.reptiles}\n"
@@ -25,8 +25,8 @@ class Animal:
                 f"Anfibios : {Animal.anfibios}")
 
     def toString(self):
-        base = (f"Mi nombre es {self.__nombre}, tengo una edad de {self.__edad}, habito en {self.__habitat} "
-                f"y mi genero es {self.__genero}")
+        base = (f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} "
+                f"y mi genero es {self._genero}")
         if self.zona and self.zona.zoo:
             return f"{base}, la zona en la que me ubico es {self.zona.getNombre()}, en el {self.zona.getZoo().getNombre()}."
         return base
