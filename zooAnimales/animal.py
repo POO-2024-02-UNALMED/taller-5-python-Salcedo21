@@ -18,8 +18,11 @@ class Animal:
         return "desplazarse"
 
     def totalPorTipo():
-        return (f"Mamiferos: {Animal.mamiferos}\nAves: {Animal.aves}\n"
-                f"Reptiles: {Animal.reptiles}\nPeces: {Animal.peces}\nAnfibios: {Animal.anfibios}")
+        return (f"Mamiferos : {Animal.mamiferos}\n"
+                f"Aves : {Animal.aves}\n"
+                f"Reptiles : {Animal.reptiles}\n"
+                f"Peces : {Animal.peces}\n"
+                f"Anfibios : {Animal.anfibios}")
 
     def toString(self):
         base = (f"Mi nombre es {self.__nombre}, tengo una edad de {self.__edad}, habito en {self.__habitat} "
@@ -29,4 +32,13 @@ class Animal:
         return base
 
     def getNombre(self):
-        return self.__nombre
+        return self._nombre
+
+    def getEdad(self):
+        return self._edad
+
+    def getHabitat(self):
+        return self._habitat
+
+    def getGenero(self):
+        return self._genero
