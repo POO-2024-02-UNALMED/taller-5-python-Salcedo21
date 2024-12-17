@@ -12,7 +12,7 @@ class Mamifero(Animal):
         Mamifero.listado.append(self)
         Animal.mamiferos += 1
 
-    def ispelaje(self):
+    def isPelaje(self):
         return self.pelaje
 
     @staticmethod

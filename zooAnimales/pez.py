@@ -12,6 +12,9 @@ class Pez(Animal):
         Pez.listado.append(self)
         Animal.peces += 1
 
+    def getCantidadAletas(self):
+        return  self.cantidadAletas
+
     def getColorEscamas(self):
         return self.colorEscamas
 
